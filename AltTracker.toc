@@ -2,14 +2,13 @@
 ## Title: AltTracker
 ## Notes: Track progress across your alt characters with a modular, modern UI.
 ## Author: LanniAlonsus
-## Version: 0.1.0
+## Version: 0.2.0
 ## SavedVariables: AltTrackerDB
 ## SavedVariablesPerCharacter: AltTrackerDBChar
 ## X-Category: Inventory
 ## X-Website: 
 
 # --- Libraries (optional but recommended)
-# Package the libs or rely on client-managed AddOns.
 #@no-lib-strip@
 Libs\LibStub\LibStub.lua
 Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
@@ -29,6 +28,11 @@ Core\Utils.lua
 Core\Comms.lua
 Core\Config.lua
 Core\Minimap.lua
+
+# --- UI (modern tabs + ScrollBox + search + sortable columns)
+UI\Main.lua
+UI\Tabs.lua
+UI\TableView.lua
 
 # --- Modules (enable/disable via config)
 Modules\CharacterOverview.lua
